@@ -16,14 +16,13 @@
 </head>
 
 <body>
-    <div class="wrap">
-        <!-- start header -->
-        <header class="header-area">
-            <!-- start navigation -->
+    <div class="body-div">
+        <!-- header -->
+        <header class="header-div">
+            <!--navigation -->
             <nav>
                 <ul>
-                    <li class="main-logo"><a id="Home">logo</a></li>
-                    <!-- The logo text is replaced with an image in CSS background image -->
+                    <li class="main-logo"><a id="Home"><img src="./images/logo.png" alt="company picture"></a></li>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#AboutUs">Abount Us</a></li>
                     <li><a href="#Servies">Servies</a></li>
@@ -39,34 +38,33 @@
                     </li>
                 </ul>
             </nav>
-            <!-- finish navigation -->
-
-            <!-- start top banner -->
-            <div class="banner">
+            <div class="top-banner">
                 <h1>Welcome to Three Star Media</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel placeat maxime quam ratione recusandae
                     labore soluta dicta odio, asperiores numquam veritatis et voluptatibus quis dolorum rem nisi!
                     Minima,
                     itaque commodi.</p>
-                <a href="#Contact" class="banner-btn">Connect with us <i class="fa fa-play"></i></a>
+                <a href="#Contact" class="button-banner">Connect with us <i class="fa fa-play"></i></a>
             </div>
-            <!-- finish banner -->
+            <!-- ends banner div -->
         </header>
-        <!-- finish header -->
+        <!-- ends header div -->
 
-        <!-- start section-->
-        <div class="section-wrap">
-            <!-- start about-us -->
+        <!-- main-->
+        <main class="main-div">
+            <!-- about-us -->
             <section id="AboutUs">
-                <!--flex box area-->
+                <!--flex box for about us-->
                 <div class="about-us">
                     <div class="about-text">
                         <h2>About Us</h2>
                         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatum eos est
                             reprehenderit omnis similique voluptatem ipsam voluptates eius nihil iste commodi iure
                             expedita quibusdam, dolore laboriosam ducimus. Vitae, quos.</p>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni maxime labore voluptates
-                            exercitationem iure voluptatibus libero, fuga sed dolor tempora in consectetur repudiandae.
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil magni maxime labore
+                            voluptates
+                            exercitationem iure voluptatibus libero, fuga sed dolor tempora in consectetur
+                            repudiandae.
                             Laborum deserunt ea officiis recusandae ab.</p>
                     </div>
                     <div class="about-img">
@@ -74,67 +72,76 @@
                     </div>
                 </div>
             </section>
-            <!-- finish about us -->
+            <!-- ends about us div -->
 
-            <!-- start service -->
+            <!-- services -->
             <section id="Servies">
-                <!-- grid template area -->
+                <!-- grid template area for services -->
+                <!-- six coloumns, three rows
+                *header header header header header header
+                 *digital digital digital marketing marketing marketing
+                *video video webdev webdev print print -->
                 <div class="servies">
                     <div class="servies-box service-header">
                         <h2>
                             Our Servies
                         </h2>
                     </div>
-                    <div class="servies-box servies1">
+                    <div class="servies-box digital">
                         <h3>Digital Transformation</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis. Aperiam
+                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                            Aperiam
                             dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="servies-btn">Digital Plans <i class="fa fa-play"></i></a>
+                        <a href="#" class="button-services">Digital Plans <i class="fa fa-play"></i></a>
                     </div>
-                    <div class="servies-box servies2">
+                    <div class="servies-box marketing">
                         <h3>Marketing</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis. Aperiam
+                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                            Aperiam
                             dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="servies-btn">Marketing plans <i class="fa fa-play"></i></a>
+                        <a href="#" class="button-services">Marketing plans <i class="fa fa-play"></i></a>
                     </div>
-                    <div class="servies-box servies3">
+                    <div class="servies-box video">
                         <h3>Video Production</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis. Aperiam
+                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                            Aperiam
                             dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="servies-btn">Video Plans <i class="fa fa-play"></i></a>
+                        <a href="#" class="button-services">Video Plans <i class="fa fa-play"></i></a>
                     </div>
-                    <div class="servies-box servies4">
+                    <div class="servies-box webdev">
                         <h3>Web development</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis. Aperiam
+                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                            Aperiam
                             dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="servies-btn">Web Plans <i class="fa fa-play"></i></a>
+                        <a href="#" class="button-services">Web Plans <i class="fa fa-play"></i></a>
                     </div>
-                    <div class="servies-box servies5">
+                    <div class="servies-box print">
                         <h3>Print</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis. Aperiam
+                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                            Aperiam
                             dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="servies-btn">Print Plans <i class="fa fa-play"></i></a>
+                        <a href="#" class="button-services">Print Plans <i class="fa fa-play"></i></a>
                     </div>
                 </div>
             </section>
-            <!-- finish service -->
+            <!-- ends service div -->
 
-            <!-- start our vision -->
-            <!-- ask to prof -->
+            <!-- our vision -->
             <section id="Vision">
                 <div class="vision">
                     <h2>Our Vision</h2>
                     <p>
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt, aliquid. Explicabo
-                        provident, magni sit, iusto non quisquam debitis est autem nam quos repellendus sint ab eveniet.
+                        provident, magni sit, iusto non quisquam debitis est autem nam quos repellendus sint ab
+                        eveniet.
                         Adipisci maiores iure blanditiis.
                     </p>
-                    <a href="#" class="vision-btn">Print Plans <i class="fa fa-play"></i></a>
+                    <a href="#" class="-button-vision">Print Plans <i class="fa fa-play"></i></a>
                 </div>
             </section>
             <!-- finish our vision -->
@@ -146,38 +153,40 @@
                     <div class="team-box team-header">
                         <h2>Our Team</h2>
                     </div>
-                    <div class="team-box team1">
-                        <img src="./images/john.jpg" alt="john-picture">
+                    <div class="team-box img1">
+                        <img src="./images/john.jpg" alt="Portrait of John Doe">
                     </div>
-                    <div class="team-box team2">
+                    <div class="team-box man1">
                         <h3>John Doe</h3>
                         <p>CEO and Co-owner</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam provident,
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
+                            provident,
                             repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
                             minus consequuntur deserunt odio officia.</p>
                     </div>
-                    <div class="team-box team3">
-                        <img src="./images/bob.jpg" alt="bob-picture">
+                    <div class="team-box img2">
+                        <img src="./images/bob.jpg" alt="Portrait of Bob Rite">
                     </div>
-                    <div class="team-box team4">
+                    <div class="team-box man2">
                         <h3>Bob Rite</h3>
                         <p>CFO and Co-owner</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam provident,
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
+                            provident,
                             repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
                             minus consequuntur deserunt odio officia.</p>
                     </div>
                 </div>
             </section>
-            <!-- finish our team -->
+            <!-- ends our team div -->
 
-            <!-- start contact-us -->
+            <!-- contact-us -->
             <section id="Contact">
                 <!-- flex template area -->
                 <div class="contact">
                     <div class="contact-box contact-header">
                         <h2>Contact Us</h2>
                     </div>
-                    <div class="contact-box contact1">
+                    <div class="contact-box contact-details">
                         <!-- contact-form -->
                         <form action="#">
                             <h3>Send Us a message</h3>
@@ -191,7 +200,7 @@
                         </form>
                         <!-- finish form -->
                     </div>
-                    <div class="contact-box contact2">
+                    <div class="contact-box contact-map">
                         <!-- google map -->
                         <h3>Location</h3>
                         <div class="map">
@@ -201,11 +210,11 @@
                                 referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
                     </div>
-                    <div class="contact-box contact3">
+                    <div class="contact-box contact-hours">
                         <h3>
                             Hours of operation
                         </h3>
-                        <!-- table area -->
+                        <!-- table -->
                         <div class="table-wrap">
                             <table>
                                 <thead>
@@ -226,13 +235,13 @@
                                 </tbody>
                             </table>
                         </div>
-                        <!-- finish table -->
+                        <!-- ends table div -->
                     </div>
                 </div>
             </section>
-            <!-- finish contact us -->
-        </div>
-        <!-- finish section-wrap -->
+            <!-- ends contact us div -->
+        </main>
+        <!-- ends main div -->
 
         <!-- start footer -->
         <footer>
@@ -241,8 +250,8 @@
                     &copy;Copyright Three Star Media, 2020
                 </p>
                 <p>
-                All images are taken from <a href="https://unsplash.com/">Unsplash</a>
-            </p>
+                    All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+                </p>
             </div>
         </footer>
         <!-- finish footer -->
