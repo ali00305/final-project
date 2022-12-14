@@ -6,11 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+     <!-- css reset -->
+     <link rel="stylesheet" href="./reset.css">
+
     <!-- icon link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- css link -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="/main.css">
 
     <title>Final Project</title>
 </head>
@@ -20,40 +23,43 @@
         <!-- header -->
         <header class="header-div">
             <!--navigation -->
-            <nav>
-                <ul>
-                    <li class="main-logo"><a id="Home"><img src="./images/logo.png" alt="company picture"></a></li>
+            <nav class="nav box">
+                <ul class="nav-sort">
+                    <li class="main-logo box"><a id="Home"><img src="./images/logo.png" alt="company picture"></a></li>
                     <li><a href="#Home">Home</a></li>
                     <li><a href="#AboutUs">Abount Us</a></li>
-                    <li><a href="#Servies">Servies</a></li>
+                    <li><a href="#services">services</a></li>
                     <li><a href="#Team">Team</a></li>
                     <li><a href="#Contact">Contact</a></li>
                     <li>
-                        <div>
+                        <div class="search-field">
                             <form id="form">
                                 <input type="search" id="search" name="search" placeholder="Search">
                             </form>
-                            <button>click<i class="fa fa-play"></i></button>
+                            <button class="button-search"><i class="fa fa-search" aria-hidden="true"></i></button>
                         </div>
                     </li>
                 </ul>
             </nav>
-            <div class="top-banner">
-                <h1>Welcome to Three Star Media</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel placeat maxime quam ratione recusandae
-                    labore soluta dicta odio, asperiores numquam veritatis et voluptatibus quis dolorum rem nisi!
-                    Minima,
-                    itaque commodi.</p>
-                <a href="#Contact" class="button-banner">Connect with us <i class="fa fa-play"></i></a>
+            <div class="wrapper-banner">
+                <div class="top-banner">
+                    <h1>Welcome to Three Star Media</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vel placeat maxime quam ratione
+                        recusandae
+                        labore soluta dicta odio, asperiores numquam veritatis et voluptatibus quis dolorum rem nisi!
+                        Minima,
+                        itaque commodi.</p>
+                    <a href="#Contact" class="button-banner">Connect with us <i class="fa fa-play"></i></a>
+                </div>
             </div>
             <!-- ends banner div -->
-        </header>
+        </header>b=
         <!-- ends header div -->
 
         <!-- main-->
         <main class="main-div">
             <!-- about-us -->
-            <section id="AboutUs">
+            <section id="aboutus">
                 <!--flex box for about us-->
                 <div class="about-us">
                     <div class="about-text">
@@ -75,64 +81,79 @@
             <!-- ends about us div -->
 
             <!-- services -->
-            <section id="Servies">
+            <section id="services">
                 <!-- grid template area for services -->
                 <!-- six coloumns, three rows
                 *header header header header header header
                  *digital digital digital marketing marketing marketing
                 *video video webdev webdev print print -->
-                <div class="servies">
-                    <div class="servies-box service-header">
+                <div class="services">
+                    <div class="services-box services-header">
                         <h2>
-                            Our Servies
+                            Our Services
                         </h2>
                     </div>
-                    <div class="servies-box digital">
-                        <h3>Digital Transformation</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
-                            Aperiam
-                            dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="button-services">Digital Plans <i class="fa fa-play"></i></a>
+                    <div class="services-box digital">
+                        <img src="./images/digital.jpg" alt="digital-service">
+                        <div class="wrapper-services">
+                            <h3>Digital Transformation</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
+                                illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                                Aperiam
+                                dignissimos quis totam ad maiores?</p>
+                            <a href="#" class="button-services button">Digital Plans <i class="fa fa-play"></i></a>
+                        </div>
                     </div>
-                    <div class="servies-box marketing">
-                        <h3>Marketing</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
-                            Aperiam
-                            dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="button-services">Marketing plans <i class="fa fa-play"></i></a>
+                    <div class="services-box marketing">
+                        <img src="./images/marketing.jpg" alt="margeting-service">
+                        <div class="wrapper-services">
+                            <h3>Marketing</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
+                                illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                                Aperiam
+                                dignissimos quis totam ad maiores?</p>
+                            <a href="#" class="button-services button">Marketing plans <i class="fa fa-play"></i></a>
+                        </div>
                     </div>
-                    <div class="servies-box video">
-                        <h3>Video Production</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
-                            Aperiam
-                            dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="button-services">Video Plans <i class="fa fa-play"></i></a>
+                    <div class="services-box video">
+                        <img src="./images/video.jpg" alt="vido-service">
+                        <div class="wrapper-services">
+                            <h3>Video Production</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
+                                illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                                Aperiam
+                                dignissimos quis totam ad maiores?</p>
+                            <a href="#" class="button-services button">Video Plans <i class="fa fa-play"></i></a>
+                        </div>
                     </div>
-                    <div class="servies-box webdev">
-                        <h3>Web development</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
-                            Aperiam
-                            dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="button-services">Web Plans <i class="fa fa-play"></i></a>
+                    <div class="services-box webdev">
+                        <img src="./images/web.jpg" alt="web-service">
+                        <div class="wrapper-services">
+                            <h3>Web development</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
+                                illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                                Aperiam
+                                dignissimos quis totam ad maiores?</p>
+                            <a href="#" class="button-services button">Web Plans <i class="fa fa-play"></i></a>
+                        </div>
                     </div>
-                    <div class="servies-box print">
-                        <h3>Print</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
-                            illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
-                            Aperiam
-                            dignissimos quis totam ad maiores?</p>
-                        <a href="#" class="button-services">Print Plans <i class="fa fa-play"></i></a>
+                    <div class="services-box print">
+                        <img src="./images/print.jpg" alt="print-service">
+                        <div class="wrapper-services">
+                            <h3>Print</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam nam perspiciatis quos
+                                illum molestias, corporis, eius officiis nobis eos, velit ullam iure eum blanditiis.
+                                Aperiam
+                                dignissimos quis totam ad maiores?</p>
+                            <a href="#" class="button-services button">Print Plans <i class="fa fa-play"></i></a>
+                        </div>
                     </div>
                 </div>
             </section>
             <!-- ends service div -->
 
             <!-- our vision -->
-            <section id="Vision">
+            <section id="vision">
                 <div class="vision">
                     <h2>Our Vision</h2>
                     <p>
@@ -141,39 +162,43 @@
                         eveniet.
                         Adipisci maiores iure blanditiis.
                     </p>
-                    <a href="#" class="-button-vision">Print Plans <i class="fa fa-play"></i></a>
+                    <a href="#" class="button-vision button">Print Plans <i class="fa fa-play"></i></a>
                 </div>
             </section>
             <!-- finish our vision -->
 
             <!-- start our team -->
-            <section id="Team">
+            <section id="team">
                 <!-- flex area -->
                 <div class="team">
-                    <div class="team-box team-header">
+                    <div class="team-header">
                         <h2>Our Team</h2>
                     </div>
-                    <div class="team-box img1">
-                        <img src="./images/john.jpg" alt="Portrait of John Doe">
+                    <div class="wrapper-team">
+                        <div class="team-box img1">
+                            <img src="./images/john.jpg" alt="Portrait of John Doe">
+                        </div>
+                        <div class="team-box">
+                            <h3>John Doe</h3>
+                            <p>CEO and Co-owner</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
+                                provident,
+                                repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
+                                minus consequuntur deserunt odio officia.</p>
+                        </div>
                     </div>
-                    <div class="team-box man1">
-                        <h3>John Doe</h3>
-                        <p>CEO and Co-owner</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
-                            provident,
-                            repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
-                            minus consequuntur deserunt odio officia.</p>
-                    </div>
-                    <div class="team-box img2">
-                        <img src="./images/bob.jpg" alt="Portrait of Bob Rite">
-                    </div>
-                    <div class="team-box man2">
-                        <h3>Bob Rite</h3>
-                        <p>CFO and Co-owner</p>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
-                            provident,
-                            repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
-                            minus consequuntur deserunt odio officia.</p>
+                    <div class="wrapper-team">
+                        <div class="team-box img2">
+                            <img src="./images/bob.jpg" alt="Portrait of Bob Rite">
+                        </div>
+                        <div class="team-box">
+                            <h3>Bob Rite</h3>
+                            <p>CFO and Co-owner</p>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor sed dicta ullam
+                                provident,
+                                repudiandae dolore eius earum sint voluptates ipsum voluptatum velit quasi sequi labore
+                                minus consequuntur deserunt odio officia.</p>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -250,7 +275,7 @@
                     &copy;Copyright Three Star Media, 2020
                 </p>
                 <p>
-                    All images are taken from <a href="https://unsplash.com/">Unsplash</a>
+                    All images are taken from Unsplash</a>
                 </p>
             </div>
         </footer>
